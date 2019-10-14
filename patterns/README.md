@@ -5,6 +5,7 @@ Prior to my latest commit, the inputs had to be hardcoded in the main function a
 I generalized the function to take in all inputs and made it easier to add more patterns if necessary. It seems like a trivial project, but I’m proud of it because I tried my best to write clean and readable code. Revisiting it today also reminded me of how much more I’ve learned since I first started on the exercise two months ago. :)
 
 ## The different patterns are as follows:
+<pre>
 ### a
 o---o  
 |   |  
