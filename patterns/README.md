@@ -7,9 +7,9 @@ I generalized the function to take in all inputs and made it easier to add more 
 ## The different patterns are as follows:
 <pre>
 (a)
-o---o  
-|   |  
-|   |  
+o---o\
+|   |\ 
+|   |\
 o---o  
 
 (b)
@@ -35,3 +35,7 @@ ABBBC
 B   B
 B   B
 CBBBA
+</pre>
+
+## Restrictions
+Only library function allowed: write
