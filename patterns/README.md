@@ -9,7 +9,7 @@ It seems like a trivial project, but I’m proud of it because I tried my best t
 ## Library function allowed:
 write
 
-## The different patterns are as follows:
+## The different patterns:
 <pre>
 (a)
 o---o  
