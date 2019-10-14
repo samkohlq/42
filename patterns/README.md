@@ -6,31 +6,31 @@ I generalized the function to take in all inputs and made it easier to add more 
 
 ## The different patterns are as follows:
 <pre>
-### a
+pattern a
 o---o  
 |   |  
 |   |  
 o---o  
 
-### b
+pattern b
 /***\  
 *   *  
 *   * 
 \***/  
 
-### c
+pattern c
 ABBBA
 B   B
 B   B
 CBBBC
 
-### d
+pattern d
 ABBBC
 B   B
 B   B
 ABBBC
 
-### e
+pattern e
 ABBBC
 B   B
 B   B
