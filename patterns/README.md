@@ -6,16 +6,16 @@ I generalized the function to take in all inputs and made it easier to add more 
 
 ## The different patterns are as follows:
 ### a
-o---o\n
-|   |
-|   |
-o---o
+o---o  
+|   |  
+|   |  
+o---o  
 
 ### b
-/***\
-*   *
-*   *
-\***/
+/***\  
+*   *  
+*   * 
+\***/  
 
 ### c
 ABBBA
