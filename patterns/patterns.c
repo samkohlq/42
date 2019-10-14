@@ -6,18 +6,11 @@
 /*   By: skoh <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 14:33:38 by skoh              #+#    #+#             */
-/*   Updated: 2019/10/14 16:12:42 by skoh             ###   ########.fr       */
+/*   Updated: 2019/10/14 16:21:25 by skoh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "patterns.h"
-
-int		type_is_valid(char *type);
-void	print_pattern(char **type, int col, int row);
-void	first_row(char *type, int col_ctr, int col);
-void	last_row(char *type, int col_ctr, int col);
-void	middle_row(char *type, int col_ctr, int col);
-void	assign_char(char *row, char **type, char *first, char *mid, char *last);
 
 int		main(int argc, char **argv)
 {
