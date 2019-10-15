@@ -20,7 +20,7 @@ void	ft_putchar(char c)
 /* iterates through string and prints each char */
 void	ft_putstr(char *str)
 {
-	int ctr;
+	int	ctr;
 
 	ctr = 0;
 	while (str[ctr] != '\0')
@@ -33,9 +33,9 @@ void	ft_putstr(char *str)
 /* converts a char to an int - replicates behaviour of stdlib's atoi function */
 int		ft_atoi(const char *str)
 {
-	int result;
-	int sign;
-	int ctr;
+	int	result;
+	int	sign;
+	int	ctr;
 	int	exceeded;
 
 	result = 0;
