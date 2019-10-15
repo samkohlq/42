@@ -14,8 +14,8 @@
 
 void	print_pattern(char **type, int col, int row)
 {
-	int		col_ctr;
-	int		row_ctr;
+	int	col_ctr;
+	int	row_ctr;
 
 	row_ctr = 0;
 	col_ctr = 0;
