@@ -6,29 +6,11 @@
 /*   By: skoh <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 14:33:38 by skoh              #+#    #+#             */
-/*   Updated: 2019/10/14 16:21:25 by skoh             ###   ########.fr       */
+/*   Updated: 2019/10/14 17:18:11 by skoh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "patterns.h"
-
-int		main(int argc, char **argv)
-{
-	if (argc == 4 && type_is_valid(argv[1]))
-	{
-		print_pattern(&argv[1], ft_atoi(argv[2]), ft_atoi(argv[3]));
-	}
-	else
-		ft_putstr("usage: [a/b/c/d/e] [col] [row]\n");
-	return (0);
-}
-
-int		type_is_valid(char *type)
-{
-	if (*type >= 'a' && *type <= 'e')
-		return (1);
-	return (0);
-}
 
 void	print_pattern(char **type, int col, int row)
 {
@@ -37,15 +19,16 @@ void	print_pattern(char **type, int col, int row)
 
 	row_ctr = 0;
 	col_ctr = 0;
-	if (col <= 0 || row <= 0)
-	{
-		ft_putstr("col or row must be positive integer\n");
-		return ;
-	}
+	/* iterate through each row */
 	while (row_ctr < row)
 	{
+		/* iterate through each column of that row */
 		while (col_ctr < col)
 		{
+			/*
+			 * print pattern according to the row that we're at
+			 * tell the respective functions which type of pattern to print
+			 */
 			if (row_ctr == 0)
 				first_row(*type, col_ctr, col);
 			else if (row_ctr == row - 1)
@@ -68,6 +51,10 @@ void	first_row(char *type, int col_ctr, int col)
 	char	last;
 
 	row = 'f';
+	/*
+	 * tell the function what characters to print in the first row
+	 * depending on which type of pattern the user asked for
+	 */
 	assign_char(&row, &type, &first, &mid, &last);
 	if (col_ctr == 0)
 		ft_putchar(first);
@@ -85,6 +72,10 @@ void	last_row(char *type, int col_ctr, int col)
 	char	last;
 
 	row = 'l';
+	/*
+	 * tell the function what characters to print in the last row
+	 * depending on which type of pattern the user asked for
+	 */
 	assign_char(&row, &type, &first, &mid, &last);
 	if (col_ctr == 0)
 		ft_putchar(first);
@@ -102,6 +93,10 @@ void	middle_row(char *type, int col_ctr, int col)
 	char	last;
 
 	row = 'm';
+	/*
+	 * tell the function what characters to print in the last row
+	 * depending on which type of pattern the user asked for
+	 */
 	assign_char(&row, &type, &first, &mid, &last);
 	if (col_ctr == 0)
 		ft_putchar(first);
@@ -111,6 +106,7 @@ void	middle_row(char *type, int col_ctr, int col)
 		ft_putchar(mid);
 }
 
+/* assigns the characters to print based on rules that we define */
 void	assign_char(char *row, char **type, char *first, char *mid, char *last)
 {
 	if (**type == 'a')
