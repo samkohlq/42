@@ -4,7 +4,7 @@ This is an improved version of a project that I did in my second week of the C b
 
 Prior to my latest revision, the inputs had to be hardcoded in the main function and the user would have had to compile separate .c files for each of the different patterns. I generalized the program to take in all inputs and made it easier to add more patterns if necessary.  
 
-It seems like a trivial project, but I’m proud of it because I tried my best to write clean and readable code. Revisiting it today also reminded me of how much more I’ve learned since I first started on the exercise two months ago. :)
+It seems like a trivial project, but I’m proud of it because I tried my best to write clean and readable code. Revisiting it also reminded me of how much more I’ve learned since I first started on the exercise two months ago. :)
 
 ## Library function allowed:
 write
