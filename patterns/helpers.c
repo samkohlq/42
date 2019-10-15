@@ -6,7 +6,7 @@
 /*   By: skoh <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 16:09:06 by skoh              #+#    #+#             */
-/*   Updated: 2019/10/14 16:10:54 by skoh             ###   ########.fr       */
+/*   Updated: 2019/10/14 17:22:04 by skoh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
+/* iterates through string and prints each char */
 void	ft_putstr(char *str)
 {
 	int ctr;
@@ -29,6 +30,7 @@ void	ft_putstr(char *str)
 	}
 }
 
+/* converts a char to an int - replicates behaviour of stdlib's atoi function */
 int		ft_atoi(const char *str)
 {
 	int result;
