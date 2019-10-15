@@ -15,7 +15,7 @@
 int		main(int argc, char **argv)
 {
 	int	col;
-	int row;
+	int	row;
 
 	/*
 	 * check that the user gave us valid inputs
